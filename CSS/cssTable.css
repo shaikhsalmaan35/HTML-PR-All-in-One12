@@ -1,0 +1,23 @@
+nav{
+    margin: 0;
+    padding: 0;
+}
+.N1{
+    background-color: rgb(6, 94, 64);
+    color: white;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+   
+}
+a{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: large
+}
+table{
+    width: ;
+}   
