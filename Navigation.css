@@ -2,6 +2,9 @@
     margin: 0%;
     padding: 0%;
 }
+body{
+    background-image: url(./src/6.jpg);
+}
 nav{
     background-color: rgb(138, 241, 207);
     padding-top: 20px;
