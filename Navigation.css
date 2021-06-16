@@ -58,11 +58,17 @@ summary{
 }
 
 footer{
-    background-color: rgb(138, 241, 207);
-    text-align: right;    
+    background-color: aquamarine;
+    padding: 20px;
 }
 iframe{
     width: 300px;
     height: 200px;
     padding: 20px;
+}
+.head{
+    background-color: aquamarine;
+    float: left;
+    padding-bottom: 50px;
+
 }
