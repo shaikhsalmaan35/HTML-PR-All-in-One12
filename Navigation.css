@@ -5,12 +5,15 @@
 body{
     background-image: url(./src/7.jpg);
     background-size:cover;
-    
+    background-attachment: fixed;
+    color: white;
 }
 nav{
     background-color: rgb(138, 241, 207);
     padding-top: 20px;
     padding-bottom: 20px;
+    position: sticky;
+    top: 0;
     /* position: fixed; */
     /* text-align: justify; */
 
@@ -76,4 +79,7 @@ iframe{
     float: left;
     padding-bottom: 50px;
 
+}
+.copy{
+    color: black;
 }
