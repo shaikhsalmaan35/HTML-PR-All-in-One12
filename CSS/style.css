@@ -8,3 +8,8 @@ h1{
 .heading{
     background-color: cornflowerblue;
 }
+p{
+    background-color: rgba(250, 91, 25, 0.5);
+    padding: 10px;
+    margin: 10px;
+}
