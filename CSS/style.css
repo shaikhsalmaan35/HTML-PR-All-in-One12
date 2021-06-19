@@ -9,7 +9,8 @@ h1{
     background-color: cornflowerblue;
 }
 p{
-    background-color: rgba(250, 91, 25, 0.5);
+    /* background-color: rgba(250, 91, 25, 0.5); */
+    background: linear-gradient(45deg, blue,white,red);
     padding: 10px;
     margin: 10px;
 
