@@ -10,13 +10,13 @@ Nav{
 
 }
 a{
-    margin: 30px;
+    margin: 10px;
     padding:10px;
     text-decoration: none;
 }
 a:hover{
-    background-color: brown;
-    color: cornsilk;
+    background-color: rgb(233, 252, 151);
+    color: rgb(39, 38, 35);
     border-radius: 10px;
 }
 
