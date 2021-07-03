@@ -9,6 +9,9 @@ Nav{
     /* text-align: justify; */
 
 }
+input{
+    text-align: center;
+}
 a{
     margin: 10px;
     padding:10px;
