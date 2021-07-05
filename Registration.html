@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <script>
-        function setStoreValues(){
-            var nameData=document.getElementById("name");
-            var passwordData=document.getElementById("password");
+        function setStoreValue(){
+            sessionStorage.getItem("userName",document.getElementById("name").value);
+            sessionStorage.getItem("userPassword",document.getElementById("password").value);
+            // var nameData=document.getElementById("name");
+            // var passwordData=document.getElementById("password");
 
-            sessionStorage.setItem("useraName", nameData.value);
-            sessionStorage.setItem("password",passwordData.value);
+            // sessionStorage.setItem("userName", nameData.value);
+            // sessionStorage.setItem("password",passwordData.value);
         }
         function getStoreValue(){
             var nameData = document.getElementById("name");
@@ -55,24 +57,25 @@
     
     <fieldset>
         <legend>Registration Form</legend>
-        <h1>Employee Details</h1>
+        <h1>User Registration</h1>
 
         <label > User Name : </label>
-        <input type="text" placeholder="Enter userName"> </input><br><br>
+        <input id="name" type="text" placeholder="Enter userName"> </input><br><br>
 
         <label > Password : </label>
-        <input type="password" placeholder="Enter password"> </input><br><br>
+        <input id="password" type="password" placeholder="Enter password"> </input><br><br>
+        <label > confirm Password : </label>
+        <input id="confirmPassword" type="confirmPassword" placeholder="Enter confirm password"> </input><br><br>
         
         <br><br>
         <label for="">Select Gender :</label>
         <input type="radio" name="gender" value="male" >Male
         <input type="radio" name="gender" value="female" >Female<br><br>
-        <label for="">Select Hobbbies :</label>
-        <input type="checkbox" value="Game">Game
-        <input type="checkbox" value="Reading">Reading
-        <input type="checkbox" value="Songs">Songs<br><br>
+        <label for="">Select Favorite Color</label>
+        <input type="color" id="colorpicker"><br><br>
 
-        <button>Submit</button>
+        <button onclick="setStoreValue()">Submit</button>
+        <button >Cancel</button>
         
 
 
