@@ -13,6 +13,13 @@
             sessionStorage.setItem("useraName", nameData.value);
             sessionStorage.setItem("password",passwordData.value);
         }
+        function getStoreValue(){
+            var nameData = document.getElementById("name");
+            var passwordData = document.getElementById("password");
+
+            nameData.value=sessionStorage.getItem("userName");
+            passwordData.value=sessionStorage.getItem("password");
+        }
     </script>
 </head>
 <style>
@@ -50,10 +57,10 @@
         <h1>Employee Details</h1>
 
         <label > User Name : </label>
-        <input type="text" placeholder="Enter First Name"> </input><br><br>
+        <input type="text" placeholder="Enter userName"> </input><br><br>
 
         <label > Password : </label>
-        <input type="text" placeholder="Enter Middel Name"> </input><br><br>
+        <input type="password" placeholder="Enter password"> </input><br><br>
         
         <br><br>
         <label for="">Select Gender :</label>
