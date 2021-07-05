@@ -7,7 +7,11 @@
     <title>Registration</title>
     <script>
         function setStoreValues(){
-            
+            var nameData=document.getElementById("name");
+            var passwordData=document.getElementById("password");
+
+            sessionStorage.setItem("useraName", nameData.value);
+            sessionStorage.setItem("password",passwordData.value);
         }
     </script>
 </head>
@@ -45,14 +49,13 @@
         <legend>Registration Form</legend>
         <h1>Employee Details</h1>
 
-        <label > First Name: </label>
+        <label > User Name : </label>
         <input type="text" placeholder="Enter First Name"> </input><br><br>
 
-        <label > Middel Name: </label>
+        <label > Password : </label>
         <input type="text" placeholder="Enter Middel Name"> </input><br><br>
         
-        <label > Last Name: </label>
-        <input type="text" placeholder="Enter Last Name"> </input><br><br>
+        <br><br>
         <label for="">Select Gender :</label>
         <input type="radio" name="gender" value="male" >Male
         <input type="radio" name="gender" value="female" >Female<br><br>
