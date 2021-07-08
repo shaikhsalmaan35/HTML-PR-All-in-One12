@@ -7,26 +7,33 @@
     <title>Registration</title>
     <script>
         function setStoreValue(){
-            sessionStorage.getItem("userName",document.getElementById("name").value);
-            sessionStorage.getItem("userPassword",document.getElementById("password").value);
-            // var nameData=document.getElementById("name");
-            // var passwordData=document.getElementById("password");
+            var nameData=document.getElementById("name");
+            var passwordData=document.getElementById("password");
+            document.getElementById("body").style=`background-color:${sessionStorage.getItem("FavColor")}`;
 
-            // sessionStorage.setItem("userName", nameData.value);
-            // sessionStorage.setItem("password",passwordData.value);
+            sessionStorage.setItem("userName", nameData.value);
+            sessionStorage.setItem("password",passwordData.value);
+            sessionStorage.setItem("FavColor",document.getElementById("colorpicker").value);
         }
         function getStoreValue(){
             var nameData = document.getElementById("name");
             var passwordData = document.getElementById("password");
+            document.getElementById("body").style=`background-color:${sessionStorage.getItem("FavColor")}`;
+
 
             nameData.value=sessionStorage.getItem("userName");
             passwordData.value=sessionStorage.getItem("password");
+            sessionStorage.setItem("FavColor",document.getElementById("colorpicker").value);
+        
         }
     </script>
 </head>
 <style>
+    
     fieldset{
         background-color: lightgreen;
+        width: 400px;
+        height: 500px;
     }
     legend{
         background-color: lightpink;
@@ -53,7 +60,7 @@
     }
     
 </style>
-<body>
+<body id="body">
     
     <fieldset>
         <legend>Registration Form</legend>
@@ -71,10 +78,11 @@
         <label for="">Select Gender :</label>
         <input type="radio" name="gender" value="male" >Male
         <input type="radio" name="gender" value="female" >Female<br><br>
+
         <label for="">Select Favorite Color</label>
         <input type="color" id="colorpicker"><br><br>
 
-        <button onclick="setStoreValue()">Submit</button>
+        <button onclick="setStoreValue()">Submit</button><br><br>
         <button >Cancel</button>
         
 
