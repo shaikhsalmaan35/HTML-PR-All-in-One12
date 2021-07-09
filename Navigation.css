@@ -2,16 +2,18 @@
     margin: 0%;
     padding: 0%;
 }
-Nav{
-    background-color: aquamarine;
+nav{
+    background-color: rgb(138, 241, 207);
     padding-top: 20px;
     padding-bottom: 20px;
+    /* position: fixed; */
     /* text-align: justify; */
 
 }
 input{
     text-align: center;
 }
+
 a{
     margin: 10px;
     padding:10px;

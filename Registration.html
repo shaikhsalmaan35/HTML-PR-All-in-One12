@@ -11,7 +11,7 @@
             var nameData=document.getElementById("name");
             var passwordData=document.getElementById("password");
             document.getElementById("body").style=`background-color:${sessionStorage.getItem("FavColor")}`;
-
+            
             sessionStorage.setItem("userName", nameData.value);
             sessionStorage.setItem("password",passwordData.value);
             sessionStorage.setItem("FavColor",document.getElementById("colorpicker").value);
@@ -62,7 +62,7 @@
     
 </style>
 <body id="body">
-    <nav>
+    <nav class="Sticky">
         <a href="./Registration.html">Registration</a>
         <a href="./Navigation.html">Home</a>
         <a href="./figure.html">Products</a>
