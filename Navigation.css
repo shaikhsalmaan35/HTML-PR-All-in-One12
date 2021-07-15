@@ -8,8 +8,12 @@ body{
     background-attachment: fixed;
     color: white;
 }
+.body1{
+    background-image: url(./src/11.jpg);
+    background-size: cover;
+}
 nav{
-    background-color: rgb(138, 241, 207);
+    background-color: black;
     padding-top: 20px;
     padding-bottom: 20px;
     position: sticky;
@@ -23,12 +27,13 @@ input{
 }
 
 a{
+    color: white;
     margin: 10px;
     padding:10px;
     text-decoration: none;
 }
 a:hover{
-    background-color: rgb(233, 252, 151);
+    background-color: white;
     color: rgb(39, 38, 35);
     border-radius: 10px;
 }
@@ -66,7 +71,7 @@ summary{
 }
 
 footer{
-    background-color: aquamarine;
+    background-color: black;
     padding: 20px;
 }
 iframe{
@@ -81,9 +86,16 @@ iframe{
 
 }
 .copy{
-    color: black;
+    color:white;
 }
 img{
     width: 100px;
     height: 50px;
+}
+.imgHome{
+    width: 1400px;
+    height: 400px;
+}
+h1{
+    text-align: center;
 }
