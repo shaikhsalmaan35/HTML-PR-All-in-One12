@@ -27,10 +27,4 @@
         text-align: center;
 
     }
-    /* -------------Dropdown css---------------- */
-    .dropdown-1 a{
-        display: block;
-    }
-    .dropdown-1{
-        display: inline-block;
-    }
+    
