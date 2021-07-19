@@ -13,3 +13,9 @@ img{
     margin: auto;
 }
 /* -------------------Media View---------------------- */
+@media (max-width:500) {
+    body{
+        background: linear-gradient(45deg red,green,blue);
+    }
+    
+}
