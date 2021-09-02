@@ -13,7 +13,7 @@
 
         let count=0;
         function handlerCounterIncr(){
-            count++;
+           count < 10 && count++;
             document.getElementById("counter").innerHTML=count;
         }
         function handlerCounterDecr(){
